@@ -1,7 +1,7 @@
 Given(/^que abri la aplicacion$/) do
-  pending # express the regexp above with the code you wish you had
+  visit '/'
 end
 
-Then(/^debo ver "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then(/^debo ver "(.*?)"$/) do |titulo|
+  last_response.body.should =~ /#{titulo}/m
 end

@@ -4,4 +4,4 @@ para desarrollar mi agilidad mental
 
 Scenario: debo poder iniciar el juego para digitar mis numeros
   Given que abri la aplicacion
-  Then debo ver "Bienvenido Picas y Fijas"
+  Then debo ver "Bienvenido a Picas y Fijas"
