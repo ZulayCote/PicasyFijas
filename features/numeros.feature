@@ -5,3 +5,8 @@ para desarrollar mi agilidad mental
 Scenario: debo poder iniciar el juego para digitar mis numeros
   Given que abri la aplicacion
   Then debo ver "Digite su numero"
+
+  Scenario: debo poder ver si hay una coincidencia del numero digitado con el generado
+      Given que abri la aplicacion
+      When el jugador uno prueba el numero
+      Then debo ver "es pica"

@@ -4,9 +4,11 @@
     <h1>Bienvenido a Picas y Fijas</h1>
     <br><br>
     <h2>##</h2>
-    <form name="numeros">
+    <form method="post" action="/index">
       <h2>Digite su numero:</h2>
-      
+      <input type="text" id="su_numero" name="su_numero" />
+      <input type="submit" id="probar" value="probar"/>
+      <h2><%= @@mensaje %></h2>
     </form>
   </body>
 
