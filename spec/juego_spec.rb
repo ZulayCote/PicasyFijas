@@ -5,7 +5,7 @@ describe Jugar do
   it "el numero digitado es una pica" do
     jugar = Jugar.new
     resultado = jugar.probar 31,14
-    resultado.should == "es pica"
+    resultado.should == "total picas: 1"
   end
 
   #it "el numero digitado es una fija" do
