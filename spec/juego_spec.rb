@@ -8,13 +8,10 @@ describe Jugar do
     resultado.should == "total picas: 1"
   end
 
-  #it "el numero digitado es una fija" do
-  #  jugar = Jugar.new
-  #  jugar.probar("14","31")
-  #  jugar.probar.should == "es pica"
-  #end
-
-
-
+  it "el numero digitado es una fija" do
+    jugar = Jugar.new
+    resultado = jugar.probar 31,34
+    resultado.should == "total fijas: 1"
+  end
 
 end
