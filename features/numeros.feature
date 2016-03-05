@@ -8,10 +8,5 @@ Scenario: debo poder iniciar el juego para digitar mis numeros
 
   Scenario: debo poder ver si hay una coincidencia del numero digitado con el generado
       Given que abri la aplicacion
-      When el jugador uno prueba el numero
+      When el jugador uno prueba el numero 14
       Then debo ver "es pica"
-
-      Scenario: debo poder ver si hay una coincidencia del numero digitado con el generado
-          Given que abri la aplicacion
-          When el jugador uno prueba el numero
-          Then debo ver "es fija"

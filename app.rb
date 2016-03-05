@@ -9,7 +9,8 @@ end
 
 post '/index' do
   jugar = Jugar.new
-  @@mensaje = jugar.probar()
+  @@mensaje = jugar.probar(@@numerogenerado,params["su_numero"])
+
   #@@partido.marcar(params["player"])
   #actualizamos la variable con el resultado ejecutado
   #@@marcador = @@partido.score
