@@ -3,7 +3,7 @@ require './lib/jugar'
 
 get '/' do
 @@mensaje=""
-
+@@numerogenerado="31"
   erb :index
 end
 
