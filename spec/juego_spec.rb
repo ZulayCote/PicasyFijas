@@ -14,4 +14,10 @@ describe Jugar do
     resultado.should == "total fijas: 1"
   end
 
+  it "el numero digitado no coincide" do
+    jugar = Jugar.new
+    resultado = jugar.probar 31,29
+    resultado.should == "no hay coincidencias"
+  end
+
 end

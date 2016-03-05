@@ -26,8 +26,10 @@ class Jugar
 
     if(@@contpicas > 0)
       "total picas: #{@@contpicas}"
-    else
+    elsif (@@contfijas > 0)
       "total fijas: #{@@contfijas}"
+    else
+      "no hay coincidencias"
     end
 
 
