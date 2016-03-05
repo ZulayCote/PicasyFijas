@@ -27,6 +27,12 @@ class Jugar
     end
   end
 
+  def historico(mensaje,numero)
+    vec = []
+    @historia=numero+" "+mensaje
+    vec = [@historia]
+  end
+
   def probar(numerogenerado,su_numero)
     @n1 =numerogenerado.to_s.split('')
     @n2= su_numero.to_s.split('')
