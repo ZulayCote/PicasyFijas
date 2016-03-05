@@ -6,28 +6,38 @@ class Jugar
     @@contfijas=0
   end
 
+  def fijas(n1,n2)
+    for a in(0..1)
+      if (@n1[a] == @n2[a])
+        @@contfijas = @@contfijas+1
+      end
+    end
+  end
+
+  def picas(n1,n2)
+    max = 1
+
+    for i in(0..1)
+      for j in(0..1)
+        z=max-j
+        if (@n1[i] == @n2[z])
+          @@contpicas = @@contpicas+1
+        end
+      end
+    end
+  end
+
   def probar(numerogenerado,su_numero)
     @n1 =numerogenerado.to_s.split('')
     @n2= su_numero.to_s.split('')
 
-      if (@n1[1] == @n2[0])
-        @@contpicas = @@contpicas+1
-      end
-      if (@n1[0] == @n2[1])
-        @@contpicas = @@contpicas+1
-      end
+      fijas(@n1,@n2)
+      picas(@n1,@n2)
 
-      if (@n1[0] == @n2[0])
-        @@contfijas = @@contfijas+1
-      end
-      if (@n1[1] == @n2[1])
-        @@contfijas = @@contfijas+1
-      end
-
-    if(@@contpicas > 0)
-      "total picas: #{@@contpicas}"
-    elsif (@@contfijas > 0)
+    if (@@contfijas > 0)
       "total fijas: #{@@contfijas}"
+    elsif(@@contpicas > 0)
+    "total picas: #{@@contpicas}"
     else
       "no hay coincidencias"
     end
